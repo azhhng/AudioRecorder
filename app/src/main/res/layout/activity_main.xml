@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="171dp"
+        android:layout_height="55dp"
+        android:background="#98A1B9"
+        android:backgroundTint="#98A1B9"
+        android:text="@string/record"
+        android:textColor="#FFFFFF"
+        android:onClick="recordAudio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <Button
+        android:id="@+id/stoprecordButton"
+        android:layout_width="171dp"
+        android:layout_height="55dp"
+        android:background="#98A1B9"
+        android:backgroundTint="#98A1B9"
+        android:onClick="stopAudio"
+        android:text="@string/stoprecord"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <Button
+        android:id="@+id/playbackButton"
+        android:layout_width="171dp"
+        android:layout_height="55dp"
+        android:background="#98A1B9"
+        android:backgroundTint="#98A1B9"
+        android:onClick="playAudio"
+        android:text="@string/playback"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
