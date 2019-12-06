@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+
+        // increases quality of audio (hopefully)
+        mediaRecorder.setAudioEncodingBitRate(16);
+
         mediaRecorder.setOutputFile(audioFilePath);
         mediaRecorder.prepare();
         mediaRecorder.start();
